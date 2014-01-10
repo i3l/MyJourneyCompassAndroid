@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyJ Compass</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="pain_label">Pain</string>
+    <string name="nausea_label">Nausea</string>
+    <string name="constipation_label">Constipation</string>
+    <string name="fatigue_label">Fatigue</string>
+    <string name="sleep_label">Sleep</string>
+    <string name="connect_desc">Press the button to connect or disconnect this device.\n\nAfter you have signed on, you can press Symptoms to start tracking your symptoms.\n\nIf you have a problem tracking your symptoms and are redirected to this panel, then please try to disconnect and connect again.</string>
+    <string name="symptoms_desc">Symptoms: Press this to add your symptoms.</string>
+    <string name="report_desc">Report: Press this to see your symptom report.</string>
+    <string name="warning_report_desc">It may take a few seconds to load report page.\nIf report is not loaded, please check your WIFI connection.</string>
+    <string name="hv_dc_warning">Disconnect Warning</string>
+    <string name="hv_dc_msg">Please note that if you disconnect your device, you will not be able to track your symptoms.\n\nTo track again, you need to reconnect, reauthenticate and reauthorize this app.\n\nDo you want to disconnect?</string>
+    <string name="hv_dc_YES">Yes</string>
+    <string name="hv_dc_NO">No</string>
+
+</resources>

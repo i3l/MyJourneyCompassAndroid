@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.microsoft.hsg.android.jc.SymptomActivity" >
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="25dp" />
+
+<TextView
+    android:id="@+id/patientName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:textColor="#0000FF"
+    android:textSize="12pt"
+    android:textStyle="bold"
+    android:typeface="serif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Please input your symptoms on a scale of 0 to 10"
+        android:textSize="11pt" />
+
+<View
+        android:layout_width="1dp"
+        android:layout_height="30dp" >
+    </View>
+
+    <TextView
+        android:id="@+id/painLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="@string/pain_label"
+        android:textSize="10pt" />
+
+    <SeekBar
+        android:id="@+id/painSeek"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/painValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="10pt" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dp" >
+    </View>
+
+    <TextView
+        android:id="@+id/nauseaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="@string/nausea_label"
+        android:textSize="10pt" />
+
+    <SeekBar
+        android:id="@+id/nauseaSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/nauseaValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="10pt" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dp" >
+    </View>
+
+    <TextView
+        android:id="@+id/constipationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="@string/constipation_label"
+        android:textSize="10pt" />
+
+    <SeekBar
+        android:id="@+id/constipationSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/constipationValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="10pt" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dp" >
+    </View>
+
+    <TextView
+        android:id="@+id/fatigueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="@string/fatigue_label"
+        android:textSize="10pt" />
+
+    <SeekBar
+        android:id="@+id/fatigueSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/fatigueValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="10pt" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dp" >
+    </View>
+
+    <TextView
+        android:id="@+id/sleepLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="@string/sleep_label"
+        android:textSize="10pt" />
+
+    <SeekBar
+        android:id="@+id/sleepSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/sleepValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="10pt" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="50dp" >
+    </View>
+
+    <Button
+        android:id="@+id/putThing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" >
+    </Button>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick="loadSettingsActivity"
+            android:text="Settings" />
+
+        <Button
+            android:id="@+id/report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick="loadReportActivity"
+            android:text="Report" />
+    </LinearLayout>
+
+</LinearLayout>
