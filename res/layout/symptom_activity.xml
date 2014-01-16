@@ -10,24 +10,24 @@
         android:layout_width="1dp"
         android:layout_height="25dp" />
 
-<TextView
-    android:id="@+id/patientName"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="15dp"
-    android:textColor="#0000FF"
-    android:textSize="12pt"
-    android:textStyle="bold"
-    android:typeface="serif" />
+	<TextView
+    	android:id="@+id/patientName"
+    	android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="15dp"
+	    android:textColor="#0000FF"
+	    android:textSize="20dp"
+	    android:textStyle="bold" 
+	    android:typeface="serif" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="Please input your symptoms on a scale of 0 to 10"
-        android:textSize="11pt" />
+        android:text="@string/symptoms_title"
+        android:textSize="20dp" />
 
-<View
+	<View
         android:layout_width="1dp"
         android:layout_height="30dp" >
     </View>
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:text="@string/pain_label"
-        android:textSize="10pt" />
+        android:textSize="20dp" />
 
     <SeekBar
         android:id="@+id/painSeek"
@@ -53,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:textSize="10pt" />
+        android:textSize="20dp" />
 
     <View
         android:layout_width="1dp"
@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:text="@string/nausea_label"
-        android:textSize="10pt" />
+        android:textSize="20dp" />
 
     <SeekBar
         android:id="@+id/nauseaSeek"
@@ -81,7 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:textSize="10pt" />
+        android:textSize="20dp" />
 
     <View
         android:layout_width="1dp"
@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:text="@string/constipation_label"
-        android:textSize="10pt" />
+        android:textSize="20dp" />
 
     <SeekBar
         android:id="@+id/constipationSeek"
@@ -109,7 +109,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:textSize="10pt" />
+        android:textSize="20dp" />
 
     <View
         android:layout_width="1dp"
@@ -122,7 +122,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:text="@string/fatigue_label"
-        android:textSize="10pt" />
+        android:textSize="20dp" />
 
     <SeekBar
         android:id="@+id/fatigueSeek"
@@ -137,7 +137,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:textSize="10pt" />
+        android:textSize="20dp" />
 
     <View
         android:layout_width="1dp"
@@ -150,7 +150,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:text="@string/sleep_label"
-        android:textSize="10pt" />
+        android:textSize="20dp" />
 
     <SeekBar
         android:id="@+id/sleepSeek"
@@ -165,18 +165,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:textSize="10pt" />
+        android:textSize="20dp" />
 
     <View
         android:layout_width="1dp"
-        android:layout_height="50dp" >
+        android:layout_height="45dp" >
     </View>
 
     <Button
         android:id="@+id/putThing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save" >
+        android:text="@string/symptoms_btn_save" >
     </Button>
 
     <LinearLayout
@@ -191,7 +191,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:onClick="loadSettingsActivity"
-            android:text="Settings" />
+            android:text="@string/symptoms_btn_settings" />
 
         <Button
             android:id="@+id/report"
@@ -199,7 +199,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:onClick="loadReportActivity"
-            android:text="Report" />
+            android:text="@string/symptoms_btn_report" />
     </LinearLayout>
 
 </LinearLayout>

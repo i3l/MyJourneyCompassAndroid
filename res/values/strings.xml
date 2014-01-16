@@ -19,5 +19,9 @@
     <string name="hv_dc_msg">Please note that if you disconnect your device, you will not be able to track your symptoms.\n\nTo track again, you need to reconnect, reauthenticate and reauthorize this app.\n\nDo you want to disconnect?</string>
     <string name="hv_dc_YES">Yes</string>
     <string name="hv_dc_NO">No</string>
+    <string name="symptoms_title">Please input your symptoms on a scale of 0 to 10</string>
+    <string name="symptoms_btn_save">Save</string>
+    <string name="symptoms_btn_settings">Settings</string>
+    <string name="symptoms_btn_report">Report</string>
 
 </resources>
